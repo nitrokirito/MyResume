@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Resume</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 50px;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #000; /* Black title */
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: #000; /* Text color set to black */
+    }
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #000; /* Black button background */
+      color: #fff; /* White button text */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #333; /* Darker black on hover */
+    }
+    .form-group {
+      position: relative;
+    }
+    .form-group::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 2px;
+      background-color: #000; /* Black line */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Personal Resume</h1>
+    <form id="resume-form">
+      <div class="form-group">
+        <label for="nameInput">Name:</label>
+        <input type="text" class="form-control" id="nameInput" placeholder="Enter your name...">
+      </div>
+      <div class="form-group">
+        <label for="emailInput">Email:</label>
+        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email...">
+      </div>
+      <div class="form-group">
+        <label for="phoneInput">Phone:</label>
+        <input type="tel" class="form-control" id="phoneInput" placeholder="Enter your phone number...">
+      </div>
+      <div class="form-group">
+        <label for="genderInput">Gender:</label>
+        <select class="form-control" id="genderInput">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="birthdayInput">Birthday:</label>
+        <div class="row">
+          <div class="col">
+            <select class="form-control" id="monthInput">
+              <option value="">Month</option>
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" id="dayInput" placeholder="Day">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" id="yearInput" placeholder="Year">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="parentsInput">Parents:</label>
+        <input type="text" class="form-control" id="parentsInput" placeholder="Enter your parents' names...">
+      </div>
+      <div class="form-group">
+        <label for="elementaryInput">Elementary School:</label>
+        <input type="text" class="form-control" id="elementaryInput" placeholder="Enter your elementary school...">
+      </div>
+      <div class="form-group">
+        <label for="middleInput">High School:</label>
+        <input type="text" class="form-control" id="middleInput" placeholder="Enter your middle school...">
+      </div>
+      <div class="form-group">
+        <label for="highInput">Senior High School:</label>
+        <input type="text" class="form-control" id="highInput" placeholder="Enter your high school...">
+      </div>
+      <div class="form-group">
+        <label for="collegeInput">College:</label>
+        <input type="text" class="form-control" id="collegeInput" placeholder="Enter your college...">
+      </div>
+      <!-- Work Experience -->
+      <div class="form-group">
+        <label for="workInput">Work Experience:</label>
+        <textarea class="form-control" id="workInput" rows="3" placeholder="Enter your work experience..."></textarea>
+      </div>
+      <!-- Academic Achievement -->
+      <div class="form-group">
+        <label for="academicInput">Academic Achievement:</label>
+        <textarea class="form-control" id="academicInput" rows="3" placeholder="Enter your academic achievements..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Add months dynamically
+  </script>
+</body>
+</html>
